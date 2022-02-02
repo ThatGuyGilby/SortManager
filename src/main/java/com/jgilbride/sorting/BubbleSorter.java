@@ -5,6 +5,11 @@ public class BubbleSorter implements Sorter
     @Override
     public int[] sort(int[] array)
     {
+        if (array == null)
+        {
+
+        }
+
         boolean sorted = false;
         int temp;
         while (!sorted)
