@@ -1,9 +1,6 @@
 package com.jgilbride.sorting;
 
-public abstract class Sorter
+public interface Sorter
 {
-    public void sort(int[] array)
-    {
-
-    }
+    public int[] sort(int[] array);
 }

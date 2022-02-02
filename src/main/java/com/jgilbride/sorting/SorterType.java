@@ -3,5 +3,6 @@ package com.jgilbride.sorting;
 public enum SorterType
 {
     BUBBLE,
-    MERGE
+    MERGE,
+    BINARY_TREE
 }

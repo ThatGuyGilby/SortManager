@@ -1,18 +1,18 @@
 package com.jgilbride.sorting;
 
-public class MergeSorter extends Sorter
+public class MergeSorter implements Sorter
 {
     @Override
-    public void sort(int[] array)
+    public int[] sort(int[] array)
     {
-        sort(array, array.length);
+        return sort(array, array.length);
     }
 
-    public void sort(int[] array, int n)
+    public int[] sort(int[] array, int n)
     {
         if (n < 2)
         {
-            return;
+            return array;
         }
 
         int middleIndex = n / 2;
@@ -33,6 +33,8 @@ public class MergeSorter extends Sorter
         sort(rightSide, n - middleIndex);
 
         merge(array, leftSide, rightSide, middleIndex, n - middleIndex);
+
+        return array;
     }
 
     public void merge(int[] array, int[] leftSide, int[] rightSide, int left, int right) {

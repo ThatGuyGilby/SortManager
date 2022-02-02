@@ -1,7 +1,11 @@
 package com.jgilbride.sorting;
 
+import java.util.logging.Logger;
+
 public class SortManager
 {
+    public static Logger logger = Logger.getLogger("Sort Manager Logger");
+
     public Sorter GetSorter(SorterType type)
     {
         switch(type)
@@ -11,6 +15,9 @@ public class SortManager
             }
             case MERGE -> {
                 return new MergeSorter();
+            }
+            case BINARY_TREE -> {
+                return new BinaryTreeSorter();
             }
         }
 

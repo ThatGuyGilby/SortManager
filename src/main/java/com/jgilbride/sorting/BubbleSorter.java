@@ -1,9 +1,9 @@
 package com.jgilbride.sorting;
 
-public class BubbleSorter extends Sorter
+public class BubbleSorter implements Sorter
 {
     @Override
-    public void sort(int[] array)
+    public int[] sort(int[] array)
     {
         boolean sorted = false;
         int temp;
@@ -21,5 +21,7 @@ public class BubbleSorter extends Sorter
                 }
             }
         }
+
+        return array;
     }
 }
