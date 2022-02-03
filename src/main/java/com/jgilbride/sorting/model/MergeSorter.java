@@ -1,11 +1,17 @@
 package com.jgilbride.sorting.model;
 
+import com.jgilbride.sorting.controller.SortManager;
+
 public class MergeSorter implements Sorter
 {
     @Override
     public int[] sort(int[] array)
     {
-        return sort(array, array.length);
+        long startTime = System.nanoTime();
+        int[] sortedArray = sort(array, array.length);
+        SortManager.logExecutionTime(startTime);
+
+        return sortedArray;
     }
 
     public int[] sort(int[] array, int n)
@@ -39,8 +45,8 @@ public class MergeSorter implements Sorter
         return array;
     }
 
-    public void merge(int[] array, int[] leftSide, int[] rightSide, int left, int right) {
-
+    public void merge(int[] array, int[] leftSide, int[] rightSide, int left, int right)
+    {
         int i = 0, j = 0, k = 0;
         while (i < left && j < right)
         {

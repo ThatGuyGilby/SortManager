@@ -1,6 +1,10 @@
 package com.jgilbride.sorting.model;
 
+import com.jgilbride.sorting.controller.SortManager;
+
 import java.util.ArrayList;
+
+import static com.jgilbride.sorting.controller.SortManager.logger;
 
 public class BinaryTreeSorter implements Sorter
 {
@@ -9,8 +13,10 @@ public class BinaryTreeSorter implements Sorter
     {
         if (array == null)
         {
-            throw new NullPointerException();
+        throw new NullPointerException();
         }
+
+        long startTime = System.nanoTime();
 
         ArrayList<Integer> list = new ArrayList<Integer>();
         BinaryTree binaryTree = new BinaryTree(array[0]);
@@ -24,7 +30,8 @@ public class BinaryTreeSorter implements Sorter
             array[i] = (int) list.toArray()[i];
         }
 
+        SortManager.logExecutionTime(startTime);
+
         return array;
     }
-
 }

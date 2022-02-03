@@ -1,5 +1,9 @@
 package com.jgilbride.sorting.model;
 
+import com.jgilbride.sorting.controller.SortManager;
+
+import static com.jgilbride.sorting.controller.SortManager.logger;
+
 public class BubbleSorter implements Sorter
 {
     @Override
@@ -9,6 +13,8 @@ public class BubbleSorter implements Sorter
         {
             throw new NullPointerException();
         }
+
+        long startTime = System.nanoTime();
 
         boolean sorted = false;
         int temp;
@@ -26,6 +32,7 @@ public class BubbleSorter implements Sorter
                 }
             }
         }
+        SortManager.logExecutionTime(startTime);
 
         return array;
     }
