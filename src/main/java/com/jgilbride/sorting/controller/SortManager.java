@@ -1,12 +1,12 @@
 package com.jgilbride.sorting.controller;
 
 import com.jgilbride.sorting.model.*;
-
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SortManager
 {
-    public static Logger logger = Logger.getLogger("Sort Manager Logger");
+    public static Logger logger = LogManager.getLogger("Sort Manager Logger");
 
     public Sorter getSorter(SorterType type)
     {
@@ -20,6 +20,9 @@ public class SortManager
             }
             case BINARY_TREE -> {
                 return new BinaryTreeSorter();
+            }
+            case INBUILT -> {
+                return new InbuiltSorter();
             }
         }
 

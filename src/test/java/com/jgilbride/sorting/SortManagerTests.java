@@ -89,4 +89,23 @@ public class SortManagerTests
             sorter.sort(null);
         });
     }
+
+    @Test
+    public void SortManagerEnumsTest()
+    {
+        SortManager sortManager = new SortManager();
+
+        try
+        {
+            for (int i = 0; i < SorterType.values().length; i++)
+            {
+                Sorter sorter = sortManager.getSorter(SorterType.values()[i]);
+                sorter.sort(new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8});
+            }
+        }
+        catch (Exception e)
+        {
+            Assert.fail("One or more SorterType enums do not have an associated implementation.");
+        }
+    }
 }

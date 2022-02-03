@@ -42,7 +42,7 @@ public class SorterWindow implements ActionListener
 
         inputLabel = new Label("Input");
         inputField = new TextField(width / 10);
-        inputField.setText("[1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8]");
+        inputField.setText("");
         frame.add(inputLabel);
         frame.add(inputField);
 
@@ -61,7 +61,7 @@ public class SorterWindow implements ActionListener
 
         comboBox = new JComboBox(options);
         comboBox.setSelectedIndex(SorterType.BUBBLE.ordinal());
-        sorterType = SorterType.BUBBLE;
+        setSorterType(SorterType.BUBBLE);
         comboBox.addActionListener(this);
         frame.add(comboBox);
 
@@ -103,7 +103,17 @@ public class SorterWindow implements ActionListener
 
         if (event.getSource() == comboBox)
         {
-            sorterType = SorterType.values()[comboBox.getSelectedIndex()];
+            setSorterType(SorterType.values()[comboBox.getSelectedIndex()]);
+        }
+    }
+
+    public void setSorterType(SorterType sorterType)
+    {
+        this.sorterType = sorterType;
+
+        if (comboBox.getSelectedIndex() != this.sorterType.ordinal())
+        {
+            comboBox.setSelectedIndex(this.sorterType.ordinal());
         }
     }
 
@@ -125,6 +135,7 @@ public class SorterWindow implements ActionListener
             catch (NumberFormatException nfe)
             {
                 // add number format exception handling here.
+                logger.error(nfe);
             };
         }
 
@@ -132,10 +143,20 @@ public class SorterWindow implements ActionListener
 
         StringBuilder stringBuilder = new StringBuilder("Sorted array using ");
         stringBuilder.append(sorterType.getName().toLowerCase(Locale.ROOT));
-        stringBuilder.append(" sort.\n      Input: ");
+        stringBuilder.append(" sort.\nInput: ");
         stringBuilder.append(inputField.getText());
-        stringBuilder.append("\n      Output: ");
+        stringBuilder.append("\nOutput: ");
         stringBuilder.append(outputField.getText());
         logger.info(stringBuilder.toString());
+    }
+
+    public void setInputFieldText(String string)
+    {
+        inputField.setText(string);
+    }
+
+    public String getOutputFieldText()
+    {
+        return outputField.getText();
     }
 }

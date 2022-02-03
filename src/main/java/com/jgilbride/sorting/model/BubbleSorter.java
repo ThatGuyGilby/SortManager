@@ -32,6 +32,7 @@ public class BubbleSorter implements Sorter
                 }
             }
         }
+        
         SortManager.logExecutionTime(startTime);
 
         return array;

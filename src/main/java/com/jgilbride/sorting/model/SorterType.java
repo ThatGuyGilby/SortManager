@@ -4,7 +4,8 @@ public enum SorterType
 {
     BUBBLE("Bubble"),
     MERGE("Merge"),
-    BINARY_TREE("Binary Tree");
+    BINARY_TREE("Binary Tree"),
+    INBUILT("Arrays.sort");
 
     public final String name;
 
