@@ -3,6 +3,7 @@ package com.jgilbride.sorting;
 import com.jgilbride.sorting.controller.SortManager;
 import com.jgilbride.sorting.model.Sorter;
 import com.jgilbride.sorting.model.SorterType;
+import com.jgilbride.sorting.model.SuperSorter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.testng.Assert;
@@ -17,7 +18,7 @@ public class SortManagerTests
     public void SortManagerBubbleSorterTest()
     {
         SortManager sortManager = new SortManager();
-        Sorter sorter = sortManager.getSorter(SorterType.BUBBLE);
+        SuperSorter sorter = sortManager.getSorter(SorterType.BUBBLE);
         int[] array = new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8};
 
         int[] actual = sorter.sort(array);
@@ -31,7 +32,7 @@ public class SortManagerTests
     public void SortManagerMergeSorterTest()
     {
         SortManager sortManager = new SortManager();
-        Sorter sorter = sortManager.getSorter(SorterType.MERGE);
+        SuperSorter sorter = sortManager.getSorter(SorterType.MERGE);
         int[] array = new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8};
 
         int[] actual = sorter.sort(array);
@@ -45,7 +46,7 @@ public class SortManagerTests
     public void SortManagerBinaryTreeSorterTest()
     {
         SortManager sortManager = new SortManager();
-        Sorter sorter = sortManager.getSorter(SorterType.BINARY_TREE);
+        SuperSorter sorter = sortManager.getSorter(SorterType.BINARY_TREE);
         int[] array = new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8};
 
         int[] actual = sorter.sort(array);
@@ -59,7 +60,7 @@ public class SortManagerTests
     public void SortManagerBubbleSorterNullTest()
     {
         SortManager sortManager = new SortManager();
-        Sorter sorter = sortManager.getSorter(SorterType.BUBBLE);
+        SuperSorter sorter = sortManager.getSorter(SorterType.BUBBLE);
 
         NullPointerException thrown = Assertions.assertThrows(NullPointerException.class, () -> {
             sorter.sort(null);
@@ -71,7 +72,7 @@ public class SortManagerTests
     public void SortManagerMergeSorterNullTest()
     {
         SortManager sortManager = new SortManager();
-        Sorter sorter = sortManager.getSorter(SorterType.MERGE);
+        SuperSorter sorter = sortManager.getSorter(SorterType.MERGE);
 
         NullPointerException thrown = Assertions.assertThrows(NullPointerException.class, () -> {
             sorter.sort(null);
@@ -83,7 +84,7 @@ public class SortManagerTests
     public void SortManagerBinaryTreeSorterNullTest()
     {
         SortManager sortManager = new SortManager();
-        Sorter sorter = sortManager.getSorter(SorterType.BINARY_TREE);
+        SuperSorter sorter = sortManager.getSorter(SorterType.BINARY_TREE);
 
         NullPointerException thrown = Assertions.assertThrows(NullPointerException.class, () -> {
             sorter.sort(null);
@@ -99,7 +100,7 @@ public class SortManagerTests
         {
             for (int i = 0; i < SorterType.values().length; i++)
             {
-                Sorter sorter = sortManager.getSorter(SorterType.values()[i]);
+                SuperSorter sorter = sortManager.getSorter(SorterType.values()[i]);
                 sorter.sort(new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8});
             }
         }

@@ -2,7 +2,7 @@ package com.jgilbride.sorting.model;
 
 import com.jgilbride.sorting.controller.SortManager;
 
-public class MergeSorter implements Sorter
+public class MergeSorter extends SuperSorter
 {
     @Override
     public int[] sort(int[] array)

@@ -3,6 +3,7 @@ package com.jgilbride.sorting.view;
 import com.jgilbride.sorting.controller.SortManager;
 import com.jgilbride.sorting.model.Sorter;
 import com.jgilbride.sorting.model.SorterType;
+import com.jgilbride.sorting.model.SuperSorter;
 
 import javax.swing.*;
 import java.awt.*;
@@ -119,7 +120,7 @@ public class SorterWindow implements ActionListener
 
     public void sort()
     {
-        Sorter sorter = sortManager.getSorter(sorterType);
+        SuperSorter sorter = sortManager.getSorter(sorterType);
 
         String array = inputField.getText();
         String[] items = array.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll("\\s", "").split(",");

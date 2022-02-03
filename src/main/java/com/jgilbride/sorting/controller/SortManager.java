@@ -8,7 +8,7 @@ public class SortManager
 {
     public static Logger logger = LogManager.getLogger("Sort Manager Logger");
 
-    public Sorter getSorter(SorterType type)
+    public SuperSorter getSorter(SorterType type)
     {
         switch(type)
         {

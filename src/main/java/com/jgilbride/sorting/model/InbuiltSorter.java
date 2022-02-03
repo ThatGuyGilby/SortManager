@@ -4,7 +4,7 @@ import com.jgilbride.sorting.controller.SortManager;
 
 import java.util.Arrays;
 
-public class InbuiltSorter implements Sorter
+public class InbuiltSorter extends SuperSorter
 {
     @Override
     public int[] sort(int[] array)

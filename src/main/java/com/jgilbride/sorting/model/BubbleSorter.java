@@ -4,7 +4,7 @@ import com.jgilbride.sorting.controller.SortManager;
 
 import static com.jgilbride.sorting.controller.SortManager.logger;
 
-public class BubbleSorter implements Sorter
+public class BubbleSorter extends SuperSorter
 {
     @Override
     public int[] sort(int[] array)

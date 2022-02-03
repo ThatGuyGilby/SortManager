@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static com.jgilbride.sorting.controller.SortManager.logger;
 
-public class BinaryTreeSorter implements Sorter
+public class BinaryTreeSorter extends SuperSorter
 {
     @Override
     public int[] sort(int[] array)
