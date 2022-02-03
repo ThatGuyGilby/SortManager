@@ -1,8 +1,6 @@
-package com.jgilbride.sorting;
+package com.jgilbride.sorting.model;
 
 import java.util.ArrayList;
-
-import static com.jgilbride.sorting.SortManager.logger;
 
 public class BinaryTree
 {
@@ -29,7 +27,6 @@ public class BinaryTree
             node.right = add(node.right, value);
         }
 
-        //logger.info("Node already existed so it has been returned.");
         return node;
     }
 

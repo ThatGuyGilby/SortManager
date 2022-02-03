@@ -1,4 +1,4 @@
-package com.jgilbride.sorting;
+package com.jgilbride.sorting.model;
 
 public interface Sorter
 {

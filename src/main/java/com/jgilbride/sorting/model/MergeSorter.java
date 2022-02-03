@@ -1,4 +1,4 @@
-package com.jgilbride.sorting;
+package com.jgilbride.sorting.model;
 
 public class MergeSorter implements Sorter
 {
@@ -10,6 +10,11 @@ public class MergeSorter implements Sorter
 
     public int[] sort(int[] array, int n)
     {
+        if (array == null)
+        {
+            throw new NullPointerException();
+        }
+
         if (n < 2)
         {
             return array;
@@ -19,10 +24,7 @@ public class MergeSorter implements Sorter
         int[] leftSide = new int[middleIndex];
         int[] rightSide = new int[n - middleIndex];
 
-        for (int i = 0; i < middleIndex; i++)
-        {
-            leftSide[i] = array[i];
-        }
+        System.arraycopy(array, 0, leftSide, 0, middleIndex);
 
         for (int i = middleIndex; i < n; i++)
         {

@@ -1,4 +1,6 @@
-package com.jgilbride.sorting;
+package com.jgilbride.sorting.controller;
+
+import com.jgilbride.sorting.model.*;
 
 import java.util.logging.Logger;
 
@@ -6,7 +8,7 @@ public class SortManager
 {
     public static Logger logger = Logger.getLogger("Sort Manager Logger");
 
-    public Sorter GetSorter(SorterType type)
+    public Sorter getSorter(SorterType type)
     {
         switch(type)
         {

@@ -1,4 +1,4 @@
-package com.jgilbride.sorting;
+package com.jgilbride.sorting.model;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,11 @@ public class BinaryTreeSorter implements Sorter
     @Override
     public int[] sort(int[] array)
     {
+        if (array == null)
+        {
+            throw new NullPointerException();
+        }
+
         ArrayList<Integer> list = new ArrayList<Integer>();
         BinaryTree binaryTree = new BinaryTree(array[0]);
 

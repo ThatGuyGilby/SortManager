@@ -1,4 +1,4 @@
-package com.jgilbride.sorting;
+package com.jgilbride.sorting.model;
 
 public class BubbleSorter implements Sorter
 {
@@ -7,7 +7,7 @@ public class BubbleSorter implements Sorter
     {
         if (array == null)
         {
-
+            throw new NullPointerException();
         }
 
         boolean sorted = false;
