@@ -141,3 +141,77 @@ Relevant Classes
 - [SorterWindowTests.java](../main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
 
 [⮬ Table of Contents](#table-of-contents)
+
+Right-click the model package and navigate to New->Java Class.
+
+![](https://i.imgur.com/hOQlFLD.png)
+
+Give the class an appropriate name, I have used InbuiltSorter.
+
+![](https://i.imgur.com/O2Soblw.png)
+
+In that class make it extend SuperSorter
+
+Before:
+
+![](https://i.imgur.com/E7K9UvV.png)
+
+After:
+
+![](https://i.imgur.com/nB67wFW.png)
+
+Then add an override method for the sort method, for this example I have used the inbuilt array sorting.
+
+![](https://i.imgur.com/10r3cpA.png)
+
+Next navigate to the SorterType class
+
+![](https://i.imgur.com/ykCbvMg.png)
+
+In the SorterType class add a new enum to the list, in have called mine INBUILT and inside the constructor indicate the cosmetic name you want your type to have. I have used the name "Arrays.sort" to further indicate that it is using the built in sorting method.
+
+Before:
+
+![](https://i.imgur.com/8I1lm1z.png)
+
+After:
+
+![](https://i.imgur.com/ROqJAHd.png)
+
+Now navigate to the SortManager class
+
+![](https://i.imgur.com/I59KuNP.png)
+
+In the SortManager class implement a new sorter return method associated with the SorterType enum you just made.
+
+Before:
+
+![](https://i.imgur.com/85BLLCM.png)
+
+After:
+
+![](https://i.imgur.com/DIeJ2xC.png)
+
+Finally navigate to the SorterWindowTests class to create a test for the new sorter type.
+
+![](https://i.imgur.com/9BmsmBm.png)
+
+In the SorterWindowTests add a new test method to run the program and test the output.
+
+Before:
+
+![](https://i.imgur.com/HTkme3j.png)
+
+After:
+
+![](https://i.imgur.com/V4NijZC.png)
+
+Then left-click the green play button on your test window.
+
+![](https://i.imgur.com/cSM7L1c.png)
+
+You should now see your test in the viewer and if it failed, try to see why!
+
+![](https://c.tenor.com/jz-8XJAa4_YAAAAC/thats-all-folks.gif)
+
+[⮬ Table of Contents](#table-of-contents)
