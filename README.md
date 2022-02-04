@@ -7,6 +7,7 @@
 - [Phase 5](#phase-5)
 - [JUnit Testing](#junit-testing)
 - [Creating New Sorter Classes](#creating-new-sorter-classes)
+- [Personal Extensions](#personal-extensions)
 
 ## How to Use the Project
 
