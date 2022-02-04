@@ -97,7 +97,7 @@ Relevant Classes
 
 Add timing information to the project and allow the user to select multiple algorithms to compare their performance.
 
-Implementation of compareTo using the Comparable interface in [SuperSorter.java](../main/src/main/java/com/jgilbride/sorting/model/SuperSorter.java)
+Implementation of compareTo using the Comparable interface in [SuperSorter.java](../main/src/main/java/com/jgilbride/sorting/model/SuperSorter.java) using the execution time of each object to determine their order.
 ```Java
     @Override
     public int compareTo(SuperSorter o)
