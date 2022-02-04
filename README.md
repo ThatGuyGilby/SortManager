@@ -129,9 +129,9 @@ Implementation of compareTo using the Comparable interface in [SuperSorter.java]
         sort(new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8});
         long myTimeTaken = System.nanoTime() - myStartTime;
 
-        long oStartTime = System.nanoTime();
+        long otherStartTime = System.nanoTime();
         o.sort(new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8});
-        long oTimeTaken = System.nanoTime() - myStartTime;
+        long otherTimeTaken = System.nanoTime() - otherStartTime;
 
         if (myTimeTaken == oTimeTaken)
         {
