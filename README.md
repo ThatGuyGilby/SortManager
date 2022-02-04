@@ -1,4 +1,4 @@
-##Table of Contents
+## Table of Contents
 - [SortManager](#sortmanager)
     * [How to Use the Project](#how-to-use-the-project)
     * [Sort Manager Project Engineering 108/108a](#sort-manager-project-engineering-108-108a)
