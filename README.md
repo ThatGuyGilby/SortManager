@@ -67,27 +67,41 @@ Relevant Classes
 
 Logging Message Implementations
 ```Java
-    public static void logExecutionTime(long startTime)
-    {
-        long endTime = System.nanoTime();
-        long executionNanoTime = endTime - startTime;
-        StringBuilder stringBuilder = new StringBuilder("Execution time: ");
-        stringBuilder.append(executionNanoTime);
-        stringBuilder.append("ns | ");
-        stringBuilder.append(executionNanoTime * 0.000000001);
-        stringBuilder.append("s");
-        logger.info(stringBuilder.toString());
-    }
+public static void logExecutionTime(long startTime)
+{
+    long endTime = System.nanoTime();
+    long executionNanoTime = endTime - startTime;
+    StringBuilder stringBuilder = new StringBuilder("Execution time: ");
+    stringBuilder.append(executionNanoTime);
+    stringBuilder.append("ns | ");
+    stringBuilder.append(executionNanoTime * 0.000000001);
+    stringBuilder.append("s");
+    logger.info(stringBuilder.toString());
+}
 ```
 ```Java
-    public static void logExecutionTime(long startTime)
+public static void logExecutionTime(long startTime)
+{
+    ...
+
+    sortManager = new SortManager();
+
+    logger.info("SorterWindow created successfully");
+}
+```
+
+```Java
+for (int i = 0; i < items.length; i++)
+{
+    try
     {
-        ...
-
-        sortManager = new SortManager();
-
-        logger.info("SorterWindow created successfully");
+        results[i] = Integer.parseInt(items[i]);
     }
+    catch (NumberFormatException nfe)
+    {
+        logger.error(nfe);
+    };
+}
 ```
 
 [⮬ Table of Contents](#table-of-contents)

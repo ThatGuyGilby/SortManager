@@ -135,7 +135,6 @@ public class SorterWindow implements ActionListener
             }
             catch (NumberFormatException nfe)
             {
-                // add number format exception handling here.
                 logger.error(nfe);
             };
         }
