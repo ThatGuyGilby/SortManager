@@ -152,7 +152,7 @@ Implementation of compareTo using the Comparable interface in [SuperSorter.java]
 
 Each class and sorting method has been fully tested with a suite of JUnit tests.
 
-![](https://i.imgur.com/29FrHww.png)
+![](https://i.imgur.com/foJT7z7.png)
 ![](https://i.imgur.com/Duzxv2Q.png)
 
 Relevant Classes

@@ -46,7 +46,7 @@ public class SorterWindowTests
 
     @Test
     @DisplayName("Given an array of ints, the program should use the binary tree sorting method and output a sorted array")
-    public void SortManagerBinarTreeSorterTest()
+    public void SortManagerBinaryTreeSorterTest()
     {
         SorterWindow sorterWindow = SorterWindow.getWindow();
         sorterWindow.setSorterType(SorterType.BINARY_TREE);
