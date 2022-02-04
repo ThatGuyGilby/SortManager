@@ -150,6 +150,8 @@ Implementation of compareTo using the Comparable interface in [SuperSorter.java]
 
 # JUnit Testing
 
+Each class and sorting method has been fully tested with a suite of JUnit tests.
+
 Relevant Classes
 - [SortManagerTests.java](../main/src/test/java/com/jgilbride/sorting/SortManagerTests.java)
 - [SorterWindowTests.java](../main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
