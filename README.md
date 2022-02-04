@@ -5,6 +5,7 @@
 - [Phase 3](#phase-3)
 - [Phase 4](#phase-4)
 - [Phase 5](#phase-5)
+- [JUnit Testing](#junit-testing)
 
 ## How to Use the Project
 
@@ -130,5 +131,13 @@ Implementation of compareTo using the Comparable interface in [SuperSorter.java]
         return -1;
     }
 ```
+
+[⮬ Table of Contents](#table-of-contents)
+
+# JUnit Testing
+
+Relevant Classes
+- [SortManagerTests.java](/main/src/test/java/com/jgilbride/sorting/SortManagerTests.java)
+- [SorterWindowTests.java](/main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
 
 [⮬ Table of Contents](#table-of-contents)
