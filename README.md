@@ -215,6 +215,25 @@ Then left-click the green play button on your test window.
 
 You should now see your test in the viewer and if it failed, try to see why!
 
+[⮬ Table of Contents](#table-of-contents)
+
+# Personal Extensions
+
+A fully implemented GUI. The project includes a SorterWindow class which can be used to display a graphical user interface. This class can be used easily as seen in the example below.
+
+```Java
+public class Main
+{
+    public static void main(String[] args)
+    {
+        SorterWindow sorterWindow = SorterWindow.getWindow();
+    }
+}
+```
+
+Relevant Classes
+- [SorterWindow.java](../main/src/main/java/com/jgilbride/sorting/view/SorterWindow.java)
+
 ![](https://c.tenor.com/jz-8XJAa4_YAAAAC/thats-all-folks.gif)
 
 [⮬ Table of Contents](#table-of-contents)
