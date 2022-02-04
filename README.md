@@ -45,7 +45,7 @@ Write a program which will take an array of ints and sort it using a bubble sort
 Update your project to use MVC and start to incorporate some of the design principles discussed earlier in the course (OOP, SOLID, design patterns). Create classes which implements MVC, including SortManager (controller) and a DisplayManager (view) classes. The code should include a basic factory pattern to determine which sorter to use. Make sure packages are created properly and the structure follows the MVC pattern. Create an interface which both sort classes can implement and make sure your application uses this interface where possible.
 
 - [SortManager.java](../main/src/main/java/com/jgilbride/sorting/controller/SortManager.java)
-- [SorterWindow.java](../main/src/main/java/com/jgilbride/sorting/controller/SorterWindow.java)
+- [SorterWindow.java](../main/src/main/java/com/jgilbride/sorting/view/SorterWindow.java)
 - [Sorter.java](../main/src/main/java/com/jgilbride/sorting/model/Sorter.java)
 - [SuperSorter.java](../main/src/main/java/com/jgilbride/sorting/model/SuperSorter.java)
 
