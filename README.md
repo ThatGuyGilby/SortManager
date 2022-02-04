@@ -23,3 +23,7 @@
 ![](https://i.imgur.com/QjeuY1U.png)
 
 6. Enjoy the project!
+
+## Sort Manager Project Engineering 108/108a
+# Phase 1
+Write a program which will take an array of ints and sort it using a bubble sort algorithm and then a merge sort algorithm. Include JUnit tests for this and all subsequent phases (and all subsequent projects for the rest of time).
