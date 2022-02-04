@@ -65,8 +65,6 @@ Add logging code into the Sort Manager project. Set up log4j in the project and 
 Relevant Classes
 - [log4j2.properties](../main/src/main/resources/log4j2.properties)
 
-[⮬ Table of Contents](#table-of-contents)
-
 Logging Message Implementations
 ```Java
     public static void logExecutionTime(long startTime)
