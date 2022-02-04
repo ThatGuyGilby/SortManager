@@ -44,6 +44,11 @@ Write a program which will take an array of ints and sort it using a bubble sort
 # Phase 2
 Update your project to use MVC and start to incorporate some of the design principles discussed earlier in the course (OOP, SOLID, design patterns). Create classes which implements MVC, including SortManager (controller) and a DisplayManager (view) classes. The code should include a basic factory pattern to determine which sorter to use. Make sure packages are created properly and the structure follows the MVC pattern. Create an interface which both sort classes can implement and make sure your application uses this interface where possible.
 
+- [SortManager.java](../main/src/main/java/com/jgilbride/sorting/controller/SortManager.java)
+- [SorterWindow.java](../main/src/main/java/com/jgilbride/sorting/controller/SorterWindow.java)
+- [Sorter.java](../main/src/main/java/com/jgilbride/sorting/model/Sorter.java)
+- [SuperSorter.java](../main/src/main/java/com/jgilbride/sorting/model/SuperSorter.java)
+
 # Phase 3
 Add logging code into the Sort Manager project. Set up log4j in the project and add a properties file. Create logs at different levels and fully test the resulting output. Have output going to a log file created in the resources directory. Ensure there are meaningful log messages added to the project and that they reflect the needs of the levels for which they are set.
 
