@@ -39,6 +39,7 @@
 Write a program which will take an array of ints and sort it using a bubble sort algorithm and then a merge sort algorithm. Include JUnit tests for this and all subsequent phases (and all subsequent projects for the rest of time).
 
 - [BubbleSorter.java](../main/src/main/java/com/jgilbride/sorting/model/BubbleSorter.java)
+- [MergeSorter.java](../main/src/main/java/com/jgilbride/sorting/model/MergeSorter.java)
 
 # Phase 2
 Update your project to use MVC and start to incorporate some of the design principles discussed earlier in the course (OOP, SOLID, design patterns). Create classes which implements MVC, including SortManager (controller) and a DisplayManager (view) classes. The code should include a basic factory pattern to determine which sorter to use. Make sure packages are created properly and the structure follows the MVC pattern. Create an interface which both sort classes can implement and make sure your application uses this interface where possible.
