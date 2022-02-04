@@ -137,7 +137,7 @@ Implementation of compareTo using the Comparable interface in [SuperSorter.java]
 # JUnit Testing
 
 Relevant Classes
-- [SortManagerTests.java](/main/src/test/java/com/jgilbride/sorting/SortManagerTests.java)
-- [SorterWindowTests.java](/main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
+- [SortManagerTests.java](../main/src/test/java/com/jgilbride/sorting/SortManagerTests.java)
+- [SorterWindowTests.java](../main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
 
 [⮬ Table of Contents](#table-of-contents)
