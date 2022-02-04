@@ -6,6 +6,7 @@
 - [Phase 4](#phase-4)
 - [Phase 5](#phase-5)
 - [JUnit Testing](#junit-testing)
+- [Creating New Sorter Classes](#creating-new-sorter-classes)
 
 ## How to Use the Project
 
@@ -141,6 +142,8 @@ Relevant Classes
 - [SorterWindowTests.java](../main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
 
 [⮬ Table of Contents](#table-of-contents)
+
+# Creating New Sorter Classes
 
 Right-click the model package and navigate to New->Java Class.
 
