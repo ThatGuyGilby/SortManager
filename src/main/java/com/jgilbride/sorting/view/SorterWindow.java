@@ -41,7 +41,7 @@ public class SorterWindow implements ActionListener
         frame.setResizable(false);
         panel = new Panel();
 
-        inputLabel = new Label("Input");
+        inputLabel = new Label("Input   ");
         inputField = new TextField(width / 10);
         inputField.setText("");
         frame.add(inputLabel);

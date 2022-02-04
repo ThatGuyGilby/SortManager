@@ -1,15 +1,12 @@
 package com.jgilbride.sorting;
 
 import com.jgilbride.sorting.controller.SortManager;
-import com.jgilbride.sorting.model.Sorter;
 import com.jgilbride.sorting.model.SorterType;
 import com.jgilbride.sorting.model.SuperSorter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static com.jgilbride.sorting.controller.SortManager.logger;
 
 public class SortManagerTests
 {
