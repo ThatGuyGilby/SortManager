@@ -155,6 +155,10 @@ Each class and sorting method has been fully tested with a suite of JUnit tests.
 ![](https://i.imgur.com/foJT7z7.png)
 ![](https://i.imgur.com/Duzxv2Q.png)
 
+The test coverage given by my tests was 100% of classes and 89% of lines.
+
+![](https://i.imgur.com/fiHXDzi.png)
+
 Relevant Classes
 - [SortManagerTests.java](../main/src/test/java/com/jgilbride/sorting/SortManagerTests.java)
 - [SorterWindowTests.java](../main/src/test/java/com/jgilbride/sorting/SorterWindowTests.java)
