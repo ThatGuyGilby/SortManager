@@ -51,7 +51,9 @@ Update your project to use MVC and start to incorporate some of the design princ
 
 # Phase 3
 Add logging code into the Sort Manager project. Set up log4j in the project and add a properties file. Create logs at different levels and fully test the resulting output. Have output going to a log file created in the resources directory. Ensure there are meaningful log messages added to the project and that they reflect the needs of the levels for which they are set.
-
+- [SortManager.java](../main/src/main/java/com/jgilbride/sorting/controller/SortManager.java)
+- [SorterWindow.java](../main/src/main/java/com/jgilbride/sorting/view/SorterWindow.java)
+- [log4j2.properties](../main/src/main/resources/log4j2.properties)
 # Phase 4
 Integrate a new class to implement a binary search tree approach for sorting, so that the BST can be called in the same way as the other sort algorithms. The new class should implement the current Sorter interface. Add code that calls the BST and passes in the array that will be used to construct the tree and then return a sorted array. Use the Facade design pattern for this step and implement a nested class to represent a node in the tree.
 
