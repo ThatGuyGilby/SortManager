@@ -249,7 +249,7 @@ public class Main
 }
 ```
 
-Regular expression (RegEx) are used to validate the string that is inputted to the program. This means that the format can be lexable compared to a more simple string validation method.
+Regular expression (RegEx) functions are used to validate the string that is inputted to the program. This means that the format can be lexable compared to a more simple string validation method.
 
 
 ```Java
