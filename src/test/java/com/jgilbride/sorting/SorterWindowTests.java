@@ -21,7 +21,7 @@ public class SorterWindowTests
     }
 
     @Test
-    @DisplayName("Given an array of ints, the program should use the bubble sorting method and output a sorted array")
+    @DisplayName("Given an array of ints, the program should use the merge sorting method and output a sorted array")
     public void SortManagerMergeSorterTest()
     {
         SorterWindow sorterWindow = SorterWindow.getWindow();
@@ -33,7 +33,7 @@ public class SorterWindowTests
     }
 
     @Test
-    @DisplayName("Given an array of ints, the program should use the bubble sorting method and output a sorted array")
+    @DisplayName("Given an array of ints, the program should use the inbuilt sorting method and output a sorted array")
     public void SortManagerInbuiltSorterTest()
     {
         SorterWindow sorterWindow = SorterWindow.getWindow();
@@ -45,7 +45,7 @@ public class SorterWindowTests
     }
 
     @Test
-    @DisplayName("Given an array of ints, the program should use the bubble sorting method and output a sorted array")
+    @DisplayName("Given an array of ints, the program should use the binary tree sorting method and output a sorted array")
     public void SortManagerBinarTreeSorterTest()
     {
         SorterWindow sorterWindow = SorterWindow.getWindow();
