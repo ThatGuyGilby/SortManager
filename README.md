@@ -253,14 +253,14 @@ public class Main
 }
 ```
 
-Regular expression (RegEx) functions are used to validate the string that is inputted to the program. This means that the format can be lexable compared to a more simple string validation method.
+Regular expression (RegEx) functions are used to validate the string that is inputted to the program. This means that the format can be flexible compared to a more simple string validation method.
 
 
 ```Java
 String[] items = array.replaceAll("\\[", "").replaceAll("\\]", "").replaceAll("\\s", "").split(",");
 ```
 
-Using this expression alows the program a certain level of error checking. For example in the screenshot below the input is clearly invalid but once it is stripped by the expression the data is (partially) rescued and used.
+Using this expression allows the program a certain level of error checking. For example in the screenshot below the input is clearly invalid but once it is stripped by the expression the data is (partially) rescued and used.
 
 ![](https://i.imgur.com/tmja3vs.png)
 
