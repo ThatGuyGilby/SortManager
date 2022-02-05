@@ -133,11 +133,11 @@ Implementation of compareTo using the Comparable interface in [SuperSorter.java]
         o.sort(new int[]{1, 9, 8, 2, 3, 1, 1, 5, 9, 3, 7, 7, 2, 8});
         long otherTimeTaken = System.nanoTime() - otherStartTime;
 
-        if (myTimeTaken == oTimeTaken)
+        if (myTimeTaken == otherTimeTaken)
         {
             return 0;
         }
-        else if (myTimeTaken < oTimeTaken)
+        else if (myTimeTaken < otherTimeTaken)
         {
             return 1;
         }
