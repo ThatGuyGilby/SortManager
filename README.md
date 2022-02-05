@@ -80,7 +80,7 @@ public static void logExecutionTime(long startTime)
 }
 ```
 ```Java
-public static void logExecutionTime(long startTime)
+private SorterWindow(int width, int height)
 {
     ...
 
