@@ -40,8 +40,8 @@
 Write a program which will take an array of ints and sort it using a bubble sort algorithm and then a merge sort algorithm. Include JUnit tests for this and all subsequent phases (and all subsequent projects for the rest of time).
 
 Relevant Classes
-- [Employee.java](../dev/src/main/java/com/teamsix/employees/model/Employee.java)
-- [EmployeeReader.java](../dev/src/main/java/com/teamsix/employees/model/EmployeeReader.java)
+- [BubbleSorter.java](../main/src/main/java/com/jgilbride/sorting/model/BubbleSorter.java)
+- [MergeSorter.java](../main/src/main/java/com/jgilbride/sorting/model/MergeSorter.java)
 
 [⮬ Table of Contents](#table-of-contents)
 
